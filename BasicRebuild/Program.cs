@@ -10,13 +10,13 @@ namespace BasicRebuild
             var swInstance = new SldWorks.SldWorks();
             var model = (ModelDoc2)swInstance.ActiveDoc;
 
-            model.ForceRebuild3(false);
+            model.ForceRebuild3(true);
 
             var delay = 300;
 
             Thread.Sleep(delay);
 
-            model.ForceRebuild3(false);
+            model.ForceRebuild3(true);
         }
     }
 }
